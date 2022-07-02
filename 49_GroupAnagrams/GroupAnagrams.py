@@ -1,7 +1,8 @@
+import collections
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         
-        resDict = defaultdict(list)
+        resDict = collections.defaultdict(list)
         
         for s in strs:
             charMap = [0] * 26
